@@ -38,7 +38,7 @@ const Menu = (props) => {
                     >
                     <Block flex={1} center>
                         <Block flex={3} center row  >
-                            <Image style={styles.img} source={props.img} height={300} />
+                            <Image style={styles.img} source={props.img} />
                         </Block>
                         <Block flex={1} >
                             <Text bold numberOfLines={1} center h3 primary transform="capitalize">{props.name}</Text>
@@ -58,7 +58,9 @@ const styles = StyleSheet.create({
         elevation: 0.5
     },
     img: {
-        justifyContent: "flex-end"
+        justifyContent: "flex-end",
+        height: 30,
+        width: 30
     }
 });
 

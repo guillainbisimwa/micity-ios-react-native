@@ -36,7 +36,7 @@ const Main = ({navigation}) => {
           console.log('error', e);
         }  
     }
- 
+
 
     return <Block flex={1} animated>
             <StatusBar style="dark" />
@@ -56,7 +56,7 @@ const Main = ({navigation}) => {
                 <Block>
                 </Block>
             </Block>
-            <Block padding={Layout.base*2} >
+            <Block style={{ paddingTop: Layout.base*1.3, paddingRight: Layout.base*2, paddingLeft: Layout.base*2, paddingBottom: Layout.base*2 }} >
                 <Block style={styles.select}>
                     <Select
                         placeholder="Select your province"

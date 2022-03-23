@@ -23,9 +23,9 @@ export default {
     padding: 25,
   
     // font sizes
-    h1: 23,
-    h2: 20,
-    h3: 14,
+    h1: 21,
+    h2: 18,
+    h3: 12,
     title: 18,
     header: 16,
     body: 14,

@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
     },
     img: {
         justifyContent: "flex-end",
-        height: 30,
-        width: 30
+        height: 40,
+        width: 40
     }
 });
 

@@ -90,9 +90,9 @@ const Forget = ({navigation}) =>{
     return rep;
   }
 
-    return <KeyboardAwareScrollView>
+    return <KeyboardAwareScrollView style={{ backgroundColor: "#fff"}}>
 
-        <Block flex={1}  color="white" animated>
+        <Block  color="white" animated>
             <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
                 <TouchableOpacity >
                     <Icon.Ionicons

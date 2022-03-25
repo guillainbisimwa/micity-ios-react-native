@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Block, Button, Checkbox, Input, Select, Text } from "../components";
-import { Image, StyleSheet, KeyboardAvoidingView, Keyboard, ScrollView, ToastAndroid, ActivityIndicator } from "react-native";
+import { Image, StyleSheet, Keyboard, ScrollView, ToastAndroid, ActivityIndicator } from "react-native";
 import { Colors, Layout, mocks } from "../constants";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from "../api/api";
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 const Signup = ({navigation}) => {
 
@@ -165,9 +166,8 @@ const Signup = ({navigation}) => {
         }  
     }
 
-    return <ScrollView showsVerticalScrollIndicator={false}>
-    <KeyboardAvoidingView style={styles.Signup} >
-        <Block flex={1}  padding={50} color="white" animated>
+    return <KeyboardAwareScrollView>
+            <Block padding={50} color="white" animated>
             <Block flex={1} >
                 <Block flex={1} center  middle >
                     <Image style={styles.logo} source={mocks.appConfig.logo2} />
@@ -277,8 +277,7 @@ const Signup = ({navigation}) => {
                 </Block>
             </Block>
         </Block>
-    </KeyboardAvoidingView>
-    </ScrollView>
+    </KeyboardAwareScrollView>
 };
 
 

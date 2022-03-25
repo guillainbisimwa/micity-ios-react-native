@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Block, Button, Input, Text } from "../components";
-import { Image, StyleSheet, KeyboardAvoidingView, Keyboard, ToastAndroid, ActivityIndicator } from "react-native";
+import { Image, StyleSheet, Keyboard, ToastAndroid, ActivityIndicator } from "react-native";
 import { Colors, Layout, mocks } from "../constants";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from "../api/api";
 import useSaveCat from "../hooks/useSaveCat";
 import useSaveMin from "../hooks/useSaveMin";
 import useSaveServ from "../hooks/useSaveServ";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+
 
 const Login = ({navigation}) => {
 
@@ -136,8 +138,8 @@ const Login = ({navigation}) => {
         }
     };
 
-    return <KeyboardAvoidingView style={styles.login} >
-        <Block flex={1}  color="white" animated>
+    return <KeyboardAwareScrollView style={{backgroundColor: "#fff"}} >
+        <Block animated style={styles.login}>
             <Block flex={1} >
                 <Block flex={1} center  middle >
                     <Image style={styles.logo} source={mocks.appConfig.logo2} />
@@ -198,15 +200,13 @@ const Login = ({navigation}) => {
                 </Button>
             </Block>
         </Block>
-    </KeyboardAvoidingView>
+    </KeyboardAwareScrollView>
 };
 
 
 const styles = StyleSheet.create({
     login: {
-        flex: 1,
-        justifyContent: "center",
-        paddingTop:80,
+        paddingTop:90,
         paddingLeft: 50,
         paddingRight: 50,
         backgroundColor: Colors.dark.text

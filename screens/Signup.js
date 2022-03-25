@@ -165,7 +165,7 @@ const Signup = ({navigation}) => {
         }  
     }
 
-    return <ScrollView >
+    return <ScrollView showsVerticalScrollIndicator={false}>
     <KeyboardAvoidingView style={styles.Signup} >
         <Block flex={1}  padding={50} color="white" animated>
             <Block flex={1} >

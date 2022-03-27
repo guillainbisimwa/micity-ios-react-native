@@ -13,6 +13,7 @@ import { Block, Button, Input, Text, } from '../components';
 import { Colors, Layout } from '../constants';
 import * as Icon from "@expo/vector-icons";
 import api from "../api/api";
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 
 const Forget = ({navigation}) =>{
@@ -89,9 +90,9 @@ const Forget = ({navigation}) =>{
     return rep;
   }
 
-    return <ScrollView showsVerticalScrollIndicator={false} style={{ backgroundColor: "#fff" }}>
-        <KeyboardAvoidingView style={{ flex: 1}} >
-        <Block flex={1}  color="white" animated>
+    return <KeyboardAwareScrollView style={{ backgroundColor: "#fff"}}>
+
+        <Block  color="white" animated>
             <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
                 <TouchableOpacity >
                     <Icon.Ionicons
@@ -135,8 +136,8 @@ const Forget = ({navigation}) =>{
 
             </Block>
         </Block>
-    </KeyboardAvoidingView>
-    </ScrollView>
+</KeyboardAwareScrollView>
+
     
 }
 

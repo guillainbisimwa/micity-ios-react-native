@@ -3,7 +3,7 @@ import { Block, Menu, Select, Text } from "../components";
 import { Colors, Layout, mocks } from "../constants";
 import * as Icon from "@expo/vector-icons";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, TouchableOpacity } from "react-native";
+import { ScrollView, StyleSheet, TouchableOpacity } from "react-native";
 import { providers } from "../constants/mocks";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import useSaveCat from "../hooks/useSaveCat";
@@ -38,7 +38,8 @@ const Main = ({navigation}) => {
     }
 
 
-    return <Block flex={1} animated>
+    return  <ScrollView showsVerticalScrollIndicator={false}>
+    <Block flex={1} animated>
             <StatusBar style="dark" />
             <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
                 <TouchableOpacity
@@ -84,6 +85,7 @@ const Main = ({navigation}) => {
                 </Block>
             </Block>
         </Block>
+    </ScrollView>
 };
 
 const styles = StyleSheet.create({

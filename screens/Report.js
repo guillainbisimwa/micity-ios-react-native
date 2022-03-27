@@ -10,6 +10,7 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import { useDispatch, useSelector } from 'react-redux';
 import { getMunicipalities } from "../redux/municipalitiesSlice";
 import * as ImagePicker from 'expo-image-picker';
+import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 const Report = ({route, navigation}) => {
     const { min } = route.params;
@@ -307,9 +308,8 @@ const Report = ({route, navigation}) => {
         return rep;
     }
 
-    return <ScrollView style={styles.scroll} > 
-        <KeyboardAvoidingView >
-            <Block flex={1}  color="white" animated>
+    return <KeyboardAwareScrollView style={styles.scroll}>
+            <Block color="white" animated>
                 <Block flex={1} >
                     <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
                         <TouchableOpacity
@@ -425,14 +425,12 @@ const Report = ({route, navigation}) => {
                     </Block>
                 </Block>
             </Block>
-        </KeyboardAvoidingView>
-    </ScrollView>
+        </KeyboardAwareScrollView>
 };
 
 
 const styles = StyleSheet.create({
     scroll:{
-        flex: 1,
         backgroundColor: Colors.dark.text
     },
 

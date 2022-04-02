@@ -93,13 +93,13 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: "wrap",
         justifyContent: 'center',
-        zIndex: 0,
-        elevation: 0
+        // zIndex: 0,
+        // elevation: 0
     },
     select: {
         margin: Layout.base,
-        zIndex: 1,
-        elevation: 1
+        // zIndex: 1,
+        // elevation: 1
     }
 });
 

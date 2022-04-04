@@ -16,12 +16,12 @@ const Reset = ({navigation}) =>{
         <KeyboardAvoidingView style={{ flex: 1}} >
         <Block flex={1}  color="white" animated>
             <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
-                <TouchableOpacity >
+                <TouchableOpacity>
                     <Icon.Ionicons
                         color={Colors.primary}
                         size={Layout.base*2}
                         name={"arrow-back"}
-                        onPress={()=> navigation.navigate("Login")}
+                        onPress={()=> (navigation.navigate("Login") )}
                     />
                 </TouchableOpacity>
               

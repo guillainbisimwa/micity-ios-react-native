@@ -99,7 +99,7 @@ const Forget = ({navigation}) =>{
                         color={Colors.primary}
                         size={Layout.base*2}
                         name={"arrow-back"}
-                        onPress={()=> navigation.goBack()}
+                        onPress={()=> navigation.navigate("Login")}
                     />
                 </TouchableOpacity>
               

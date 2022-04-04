@@ -15,7 +15,7 @@ const Tabs = () => {
                     let iconName;
                     if(route.name == 'Main'){
                         iconName = focused ? "ios-home" : "ios-home";
-                        return <Ionicons name={iconName} color={color} size={size*1.2} />
+                        return <Ionicons style={{paddingBottom: 30}} name={iconName} color={color} size={size*1.2} />
                     }
                 },
                 initialRouteName: "Main",
@@ -24,7 +24,7 @@ const Tabs = () => {
                 tabBarShowLabel: false,
                 tabBarStyle: {
                     backgroundColor:Colors.grey,
-                    height: 50,
+                    height: 75,
                     width: '100%',
                     alignSelf: 'center',
                     justifyContent: 'space-between',

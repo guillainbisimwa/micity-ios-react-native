@@ -41,7 +41,7 @@ const Main = ({navigation}) => {
     return  <ScrollView showsVerticalScrollIndicator={false}>
     <Block flex={1} animated>
             <StatusBar style="dark" />
-            <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
+            <Block style={{ paddingTop: Layout.base*3, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
                 <TouchableOpacity
                 onPress={() => navigation.openDrawer()}>
                     <Icon.Ionicons

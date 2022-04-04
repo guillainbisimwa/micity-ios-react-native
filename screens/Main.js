@@ -3,7 +3,7 @@ import { Block, Menu, Select, Text } from "../components";
 import { Colors, Layout, mocks } from "../constants";
 import * as Icon from "@expo/vector-icons";
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, StyleSheet, TouchableOpacity } from "react-native";
+import { ScrollView, Platform, StyleSheet, TouchableOpacity } from "react-native";
 import { providers } from "../constants/mocks";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import useSaveCat from "../hooks/useSaveCat";
@@ -93,13 +93,22 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: "wrap",
         justifyContent: 'center',
-        // zIndex: 0,
-        // elevation: 0
+
+        ...Platform.select({
+            ios: {
+               zIndex: 0,
+                elevation: 0
+            },
+          })
     },
     select: {
         margin: Layout.base,
-        // zIndex: 1,
-        // elevation: 1
+        ...Platform.select({
+            ios: {
+               zIndex: 1,
+                elevation: 1
+            },
+          })
     }
 });
 

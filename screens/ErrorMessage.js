@@ -40,7 +40,7 @@ const ErrorMessage = ({route, navigation}) =>{
                 </View>
                 <Block style={{padding: 50}} >
                     <Block style={styles.mt} >
-                        <Button  onPress={()=> (navigation.navigate("Main") )}>
+                        <Button  onPress={()=> (navigation.goBack() )}>
                             <Text white bold h2 center>Go back</Text>
                         </Button>
                     </Block>

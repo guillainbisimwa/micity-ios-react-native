@@ -49,6 +49,7 @@ const Forget = ({navigation}) =>{
                 ToastAndroid.show(`Success`, ToastAndroid.LONG);
                 // console.log(rep.data[0]);
                 sendMail(rep.data[0]);
+                navigation.navigate("Reset");
             }
             else {
               ToastAndroid.show(`This email doesn't exist`, ToastAndroid.LONG);

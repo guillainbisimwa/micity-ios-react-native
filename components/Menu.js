@@ -18,7 +18,6 @@ const info = (name) => (
   );
 
 const Menu = (props) => {
-    const min = props.listMin.filter((obj) => obj.parent === props.province);
     return <TouchableOpacity
         onPress={()=> {
             if(props.name == "Service Provider"){

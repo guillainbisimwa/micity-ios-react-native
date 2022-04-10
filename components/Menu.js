@@ -55,7 +55,6 @@ const styles = StyleSheet.create({
         height: Layout.window.width/3,
         backgroundColor: Colors.light.background,
         borderRadius: Layout.radius * 2,
-        //elevation: 0.5
     },
     img: {
         justifyContent: "flex-end",

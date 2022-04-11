@@ -177,47 +177,450 @@ const services = [
 ];
 
 const municipalities = [
-    {"_id":"621513a0890da28ea6030fa4",
-        "label":"Western Cape Municipalities",
-        "phone":"",
-        "email":"",
-       // "parent":"",
-        "secondEmail":"",
-        "value":"wc",
-        "created":"2022-02-22T16:47:28.153Z",
-        "__v":0
+    
+    {
+        "_id": "62371888d3f931b463735c16",
+        "label": "Western Cape Municipalities",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "Western Cape",
+        "created": "2022-03-20T12:05:28.361Z",
+        "__v": 0
     },
-    {"_id":"6215143f890da28ea6030fa6",
-        "label":"City of Cape Town Metropolitan",
-        "phone":"",
-        "email":"guillainbisimwa@gmail.com",
-        "parent":"wc",
-        "secondEmail":"asifhassam14@gmail.com",
-        "value":"capetown",
-        "created":"2022-02-22T16:50:07.017Z",
-        "__v":0
+    {
+        "_id": "623718a5d3f931b463735c18",
+        "label": "City of Cape Town Metropolitan",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Western Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Cape town",
+        "created": "2022-03-20T12:05:57.540Z",
+        "__v": 0
     },
-    {"_id":"6215146a890da28ea6030fa8",
-        "label":"North West Municipalities",
-        "phone":"",
-        "email":"",
-       // "parent":"",
-        "secondEmail":"",
-        "value":"nw",
-        "created":"2022-02-22T16:50:50.683Z",
-        "__v":0
+    {
+        "_id": "623718b5d3f931b463735c1a",
+        "label": "North West Municipalities",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "North-West",
+        "created": "2022-03-20T12:06:13.539Z",
+        "__v": 0
     },
-    {"_id":"621514a6890da28ea6030faa",
-        "label":"Bojanala Platinum District",
-        "phone":"",
-        "email":"guillainbisimwa@gmail.com",
-        "parent":"nw",
-        "secondEmail":"asifhassam14@gmail.com",
-        "value":"bojanalaplatinum",
-        "created":"2022-02-22T16:51:50.562Z",
-        "__v":0
+    {
+        "_id": "623718c6d3f931b463735c1c",
+        "label": "Bojanala Platinum District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "North-West",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Bojanala Platinum District",
+        "created": "2022-03-20T12:06:30.451Z",
+        "__v": 0
+    },
+    {
+        "_id": "623718d7d3f931b463735c1e",
+        "label": "Dr Kenneth Kaunda District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "North-West",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Dr Kenneth Kaunda District",
+        "created": "2022-03-20T12:06:47.439Z",
+        "__v": 0
+    },
+    {
+        "_id": "623718e3d3f931b463735c20",
+        "label": "Dr Ruth Segomotsi Mompati District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "North-West",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Dr Ruth Segomotsi Mompati District",
+        "created": "2022-03-20T12:06:59.434Z",
+        "__v": 0
+    },
+    {
+        "_id": "623718eed3f931b463735c22",
+        "label": "Cape Winelands District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Western Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Cape Winelands District",
+        "created": "2022-03-20T12:07:10.057Z",
+        "__v": 0
+    },
+    {
+        "_id": "623718fbd3f931b463735c24",
+        "label": "Central Karoo District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Western Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Central Karoo District",
+        "created": "2022-03-20T12:07:23.430Z",
+        "__v": 0
+    },
+    {
+        "_id": "62371912d3f931b463735c26",
+        "label": "West Coast District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Western Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "West Coast District",
+        "created": "2022-03-20T12:07:46.104Z",
+        "__v": 0
+    },
+    {
+        "_id": "62371925d3f931b463735c28",
+        "label": "Garden Route District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Western Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Garden Route District",
+        "created": "2022-03-20T12:08:05.906Z",
+        "__v": 0
+    },
+    {
+        "_id": "623740df01d49602dca0e061",
+        "label": "Northern Cape Municipalities",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "Northern Cape",
+        "created": "2022-03-20T12:05:28.361Z",
+        "__v": 0
+    },
+    {
+        "_id": "6237414b01d49602dca0e062",
+        "label": "Frances Baard District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Northern Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Frances Baard District",
+        "created": "2022-03-20T12:05:57.540Z",
+        "__v": 0
+    },
+    {
+        "_id": "623741cc01d49602dca0e063",
+        "label": "John Taolo Gaetsewe District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Northern Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "John Taolo Gaetsewe District",
+        "created": "2022-03-20T12:05:57.540Z",
+        "__v": 0
+    },
+    {
+        "_id": "6237421f01d49602dca0e064",
+        "label": "Namakwa District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Northern Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Namakwa District",
+        "created": "2022-03-20T12:05:57.540Z",
+        "__v": 0
+    },
+    {
+        "_id": "623894beaa9f5a3820bfc95f",
+        "label": "Mpumalanga Municipalities",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "Mpumalanga",
+        "created": "2022-03-21T15:07:42.721Z",
+        "__v": 0
+    },
+    {
+        "_id": "623894d4aa9f5a3820bfc961",
+        "label": "Limpopo Municipalities",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "Limpopo",
+        "created": "2022-03-21T15:08:04.920Z",
+        "__v": 0
+    },
+    {
+        "_id": "623894f0aa9f5a3820bfc963",
+        "label": "KZN",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "KZN",
+        "created": "2022-03-21T15:08:32.568Z",
+        "__v": 0
+    },
+    {
+        "_id": "623894fdaa9f5a3820bfc965",
+        "label": "Gauteng",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "Gauteng",
+        "created": "2022-03-21T15:08:45.919Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389511aa9f5a3820bfc967",
+        "label": "Free State",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "Free State",
+        "created": "2022-03-21T15:09:05.989Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389524aa9f5a3820bfc969",
+        "label": "Eastern Cape",
+        "phone": "",
+        "email": "",
+        "secondEmail": "",
+        "value": "Eastern Cape",
+        "created": "2022-03-21T15:09:24.316Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389568aa9f5a3820bfc96b",
+        "label": "Ehlanzeni District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Mpumalanga",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Ehlanzeni District",
+        "created": "2022-03-21T15:10:32.010Z",
+        "__v": 0
+    },
+    {
+        "_id": "623897c6aa9f5a3820bfc975",
+        "label": "Gert Sibande District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Mpumalanga",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Gert Sibande District",
+        "created": "2022-03-21T15:20:38.397Z",
+        "__v": 0
+    },
+    {
+        "_id": "623897d8aa9f5a3820bfc977",
+        "label": "Nkangala District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Mpumalanga",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Nkangala District",
+        "created": "2022-03-21T15:20:56.279Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389804aa9f5a3820bfc979",
+        "label": "Capricorn District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Limpopo",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Capricorn District",
+        "created": "2022-03-21T15:21:40.082Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389813aa9f5a3820bfc97b",
+        "label": "Mopani District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Limpopo",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Mopani District",
+        "created": "2022-03-21T15:21:55.568Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389820aa9f5a3820bfc97d",
+        "label": "Vhembe District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Limpopo",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Vhembe District",
+        "created": "2022-03-21T15:22:08.916Z",
+        "__v": 0
+    },
+    {
+        "_id": "6238982eaa9f5a3820bfc97f",
+        "label": "Waterberg District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Limpopo",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Waterberg District",
+        "created": "2022-03-21T15:22:22.345Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389848aa9f5a3820bfc981",
+        "label": "eThekwini Metropolitan ",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "KZN",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "eThekwini Metropolitan ",
+        "created": "2022-03-21T15:22:48.690Z",
+        "__v": 0
+    },
+    {
+        "_id": "623898abaa9f5a3820bfc983",
+        "label": "Amajuba District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "KZN",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Amajuba District",
+        "created": "2022-03-21T15:24:27.347Z",
+        "__v": 0
+    },
+    {
+        "_id": "623898bdaa9f5a3820bfc985",
+        "label": "Harry Gwala District ",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "KZN",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Harry Gwala District ",
+        "created": "2022-03-21T15:24:45.625Z",
+        "__v": 0
+    },
+    {
+        "_id": "623898daaa9f5a3820bfc987",
+        "label": "Zululand District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "KZN",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Zululand District",
+        "created": "2022-03-21T15:25:14.766Z",
+        "__v": 0
+    },
+    {
+        "_id": "623898e7aa9f5a3820bfc989",
+        "label": "King Cetshwayo District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "KZN",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "King Cetshwayo District",
+        "created": "2022-03-21T15:25:27.213Z",
+        "__v": 0
+    },
+    {
+        "_id": "6238990daa9f5a3820bfc98b",
+        "label": "City of Ekurhuleni Metropolitan",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Gauteng",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "City of Ekurhuleni Metropolitan",
+        "created": "2022-03-21T15:26:05.301Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389920aa9f5a3820bfc98d",
+        "label": "City of Johannesburg Metropolitan",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Gauteng",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "City of Johannesburg Metropolitan",
+        "created": "2022-03-21T15:26:24.148Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389930aa9f5a3820bfc98f",
+        "label": "City of Tshwane Metropolitan",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Gauteng",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "City of Tshwane Metropolitan ",
+        "created": "2022-03-21T15:26:40.273Z",
+        "__v": 0
+    },
+    {
+        "_id": "6238993faa9f5a3820bfc991",
+        "label": "Sedibeng District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Gauteng",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Sedibeng District",
+        "created": "2022-03-21T15:26:55.441Z",
+        "__v": 0
+    },
+    {
+        "_id": "6238994faa9f5a3820bfc993",
+        "label": "West Rand District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Gauteng",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "West Rand District",
+        "created": "2022-03-21T15:27:11.600Z",
+        "__v": 0
+    },
+    {
+        "_id": "6238996baa9f5a3820bfc995",
+        "label": "Mangaung Metropolitan",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Free State",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Mangaung Metropolitan",
+        "created": "2022-03-21T15:27:39.824Z",
+        "__v": 0
+    },
+    {
+        "_id": "6238997aaa9f5a3820bfc997",
+        "label": "Fezile Dabi District",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Free State",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Fezile Dabi District",
+        "created": "2022-03-21T15:27:54.494Z",
+        "__v": 0
+    },
+    {
+        "_id": "623899e9aa9f5a3820bfc999",
+        "label": "Buffalo City Metropolitan",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Eastern Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Buffalo City Metropolitan",
+        "created": "2022-03-21T15:29:45.129Z",
+        "__v": 0
+    },
+    {
+        "_id": "62389a26aa9f5a3820bfc99b",
+        "label": "Nelson Mandela Bay Metropolitan",
+        "phone": "",
+        "email": "guillainbisimwa@gmail.com",
+        "parent": "Eastern Cape",
+        "secondEmail": "micityoffice@gmail.com",
+        "value": "Nelson Mandela Bay Metropolitan",
+        "created": "2022-03-21T15:30:46.708Z",
+        "__v": 0
     }
-]
+];
 
 const providers = [
     {

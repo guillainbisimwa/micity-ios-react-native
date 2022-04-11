@@ -53,7 +53,7 @@ const Report = ({route, navigation}) => {
               }
             }
           })();
-    },[min])
+    },[])
 
     const pickImage = async () => {
         // No permissions request is necessary for launching the image library

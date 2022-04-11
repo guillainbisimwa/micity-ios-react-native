@@ -4,7 +4,7 @@ import { Colors, Layout, mocks } from "../constants";
 import * as Icon from "@expo/vector-icons";
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, Platform, StyleSheet, TouchableOpacity } from "react-native";
-import { providers } from "../constants/mocks";
+import { providers, municipalities } from "../constants/mocks";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import useSaveCat from "../hooks/useSaveCat";
 import useSaveMin from "../hooks/useSaveMin";
@@ -14,6 +14,7 @@ import useSaveServ from "../hooks/useSaveServ";
 const Main = ({navigation}) => {
     const [province, setProvince] = useState("Western Cape");
     const [ categoriesList, setCategoriesList ] = useState(providers);
+    const [ minList, setMinList ] = useState(municipalities);
 
     const [responseCat, loadingCat, hasErrorCat] = useSaveCat(`https://micity-backend.herokuapp.com/categories/`);
     const [responseMin, loadingMin, hasErrorMin] = useSaveMin(`https://micity-backend.herokuapp.com/municipalities/`);
@@ -78,7 +79,7 @@ const Main = ({navigation}) => {
                                 status={value.status}
                                 navigation={navigation}
                                 listCat= {categoriesList}
-                                listMin= {responseMin}
+                                listMin= {minList}
                             />
                         )
                     } 

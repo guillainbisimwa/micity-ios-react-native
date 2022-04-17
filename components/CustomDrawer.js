@@ -41,6 +41,7 @@ const CustomDrawer = (props) => {
     const clearAll = async () => {
         try {
             await AsyncStorage.clear();
+            props.navigation.closeDrawer();
             props.navigation.navigate('Login');
           
         } catch(e) {

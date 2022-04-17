@@ -56,7 +56,7 @@ const Provider = ({route, navigation}) => {
                 </Block>
             </Block>
             <Block flex={1} animated style={{paddingBottom:1, paddingLeft:Layout.base*2, paddingRight:Layout.base*2, flex: 1}}>
-                <Text h2 style={styles.header} >Look for service providers that are in your city.</Text>
+                <Text h2 style={styles.header} >Look for service providers that are in your city!</Text>
                 <Input
                     search
                     placeholder="Search"
@@ -80,7 +80,7 @@ const Provider = ({route, navigation}) => {
                             response.filter((obj,id) => obj.province === province).map((object, key) => {
                                 if(object.status === 1)
                                 {
-                                    return <Service key={key} services={object} navigation={navigation} />
+                                    return <Service  label={label} cat={cat} key={key} services={object}  province= {province} listCat={listCat} navigation={navigation} />
 
                                 }
                             } )

@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Image, ScrollView, StyleSheet, TouchableOpacity } from "react-native";
 
 const ProviderDetails = ({route, navigation}) => {
-    const { details } = route.params;
+    const { details, province, listCat, label, cat } = route.params;
 
     const [ active, setActive ] = useState('About');
     const [ about, setAbout ] = useState(true);
@@ -105,7 +105,8 @@ const ProviderDetails = ({route, navigation}) => {
             <StatusBar style="dark" />
             <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
                 <TouchableOpacity
-                      onPress={()=> (navigation.goBack())}
+                      //onPress={()=> (navigation.goBack())}
+                      onPress={()=> (navigation.navigate('Provider',  {label: label, cat: cat, province: province, listCat: listCat}))}
                 >
                     <Icon.Ionicons
                         color={Colors.primary}

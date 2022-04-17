@@ -8,7 +8,7 @@ import * as Icon from "@expo/vector-icons";
 
 const Service = (props) => {
     return <TouchableOpacity
-            onPress={() => props.navigation.navigate('ProviderDetails', {details: props.services} )}
+            onPress={() => props.navigation.navigate('ProviderDetails', { label: props.label, cat: props.cat, details: props.services, province: props.province, listCat: props.listCat} )}
         >
         <Block style={styles.border}>
             <Block row>

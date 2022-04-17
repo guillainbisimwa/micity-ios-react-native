@@ -140,13 +140,13 @@ const ProviderDetails = ({route, navigation}) => {
                     })
                 }
                 </Block>
-                <Block center>
-                    <ScrollView showsVerticalScrollIndicator={false}>
+                <ScrollView showsVerticalScrollIndicator={false}>
+                    <Block center>
                     {
                             about? aboutComponent(): contact? contactComponent(): serviceComponent()
                     }
-                    </ScrollView>
-                </Block>
+                    </Block>
+                </ScrollView>
                 
             </Block>
         </Block>

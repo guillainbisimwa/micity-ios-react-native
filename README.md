@@ -1,10 +1,23 @@
+---
+noteId: "6017dfd0bdf411ec8a0daf32ba370c96"
+tags: []
+
+---
+
+
+
 # micity-ios-react-native
 
-> Explore your city and its people.
+> The MiCiti App is a convenient and easy way to report any service delivery problems you experience in your area to get them fixed. From potholes, streets lights , sewage and many other problems this is where you can get help from your Municipality. MiCiti App is at the forefront of improving service delivery in South Africa.
+
 
 ![screenshot](./app_screenshot.png)
 
-Explore your city and its people.
+
+- Loadshedding: Get the Loadshedding schedule for your area for all the stages.
+- Map: Helping you get to your destination with route planning and traffic updates for walking, driving and cycling .
+- Service provider: Find the service provider that will meet your needs from plumbing, transport, laundry and many other services.
+- MiCiti App is your one stop city app for everything you need and improving service delivery in South Africa .
 
 ## Built With
 

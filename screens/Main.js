@@ -65,6 +65,7 @@ const Main = ({navigation}) => {
                         items={mocks.provinces}
                         value={province}
                         setValue={setProvince}
+                        listMode="SCROLLVIEW"
                     />
                 </Block>
 

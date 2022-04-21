@@ -10,7 +10,7 @@ export default {
   },
   isSmallDevice: width < 375,
   radius: 6,
-  base: 15,
+  base: 17,
   padding: 24,
   font: 16,
   opacity: 0.8,

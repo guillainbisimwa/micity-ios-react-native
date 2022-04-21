@@ -30,6 +30,7 @@ const Report = ({route, navigation}) => {
     });
 
     const [images, setImages] = useState([]);
+    const [imagesV2, setImagesV2] = useState([]);
 
     const {municipalities, loading} = useSelector( (state) => state.municipalities);
     const dispatch = useDispatch();
@@ -77,7 +78,9 @@ const Report = ({route, navigation}) => {
               name,
               base64Img
             }
-
+            let imgCb2V2 = [...imagesV2];
+            imgCb2V2.push(uri);
+            setImagesV2([...imgCb2V2]);
          
             //await onCloudinarySaveCb(source);
             console.log("------------");
@@ -127,6 +130,10 @@ const Report = ({route, navigation}) => {
          
             //await onCloudinarySaveCb(source);
             console.log("------------");
+            let imgCb2V2 = [...imagesV2];
+            imgCb2V2.push(uri);
+            setImagesV2([...imgCb2V2]);
+
             let imgCb = await onCloudinarySaveCb(source);
             let imgCb2 = [...images];
 
@@ -137,8 +144,11 @@ const Report = ({route, navigation}) => {
       };
 
       const removePic = (id) => {
-        var removed = images.filter((value)=> value !== id);;
+        var removed = images.filter((value)=> value !== id);
         setImages(removed)
+
+        var removedV2 = imagesV2.filter((value)=> value !== id);
+        setImagesV2(removedV2)
       }
 
       const info = () => (
@@ -364,7 +374,7 @@ const Report = ({route, navigation}) => {
                         </Block>
                         <Block  style={styles.imgContainer}>
                             {
-                                images.map((img, key) => <Block key={key}>
+                                imagesV2.map((img, key) => <Block key={key}>
                                 <Icon.Ionicons
                                     color={Colors.danger}
                                     size={Layout.base*2}

@@ -248,10 +248,11 @@ const Report = ({route, navigation}) => {
                 });
             
                 setImages([]);
+                setImagesV2([]);
                 console.log(rep.data);
                 if(rep.data.hasOwnProperty('owner')){
                     await onSendMail1(value);
-                    await onSendMail2(value);
+                    //await onSendMail2(value);
                     setLocation("");
                     setDesc("");
                     setMunicipality("");
@@ -353,8 +354,8 @@ const Report = ({route, navigation}) => {
                                     name={"image-outline"}
                                     style={styles.icon} 
                                 />
-                                 {loadPic?
-                                <ActivityIndicator size="small" color={Colors.danger} />: <></>}
+                                 {/* {loadPic?
+                                <ActivityIndicator size="small" color={Colors.danger} />: <></>} */}
                                 <Text>Upload</Text>
                             </TouchableOpacity>
 
@@ -366,8 +367,8 @@ const Report = ({route, navigation}) => {
                                     name={"camera-outline"}
                                     style={styles.icon}
                                 />
-                                  {loadPic?
-                                <ActivityIndicator size="small" color={Colors.danger} />: <></>}
+                                  {/* {loadPic?
+                                <ActivityIndicator size="small" color={Colors.danger} />: <></>} */}
                             <Text>Take a photo</Text>
                             </TouchableOpacity>
 

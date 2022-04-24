@@ -672,14 +672,6 @@ const providers = [
         "__v": 0
     },
     {
-        "_id": "623717c1d3f931b463735c04",
-        "label": "Cleaning Services",
-        "status": 1,
-        "value": 7,
-        "created": "2022-03-20T12:02:09.629Z",
-        "__v": 0
-    },
-    {
         "_id": "623717ccd3f931b463735c06",
         "label": "Sports and recreation",
         "status": 1,
@@ -746,14 +738,14 @@ const providers = [
     {
         "_id": "6265c4813fdf5f054237b86b",
         "label": "Manufacturing & industry",
-        "value": 16,
+        "value": 7,
         "created": "2022-04-24T21:43:29.588Z",
         "__v": 0
     },
     {
         "_id": "6265c4943fdf5f054237b86d",
         "label": "Events & Conferences",
-        "value": 18,
+        "value": 16,
         "created": "2022-04-24T21:43:48.326Z",
         "__v": 0
     },

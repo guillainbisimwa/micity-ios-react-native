@@ -730,7 +730,39 @@ const providers = [
     }
 ];
 
+const reportCat = [
+    {
+        _id: "620bc030937c13ae027f5331",
+        label: "Road",
+        status: 1,
+        value:1,
+        __v:0
+    },
+    {
+        _id: "620bc030937c13ae027f5332",
+        label: "Roads",
+        status: 1,
+        value: 2,
+        __v:0
+    },
+    {
+        _id: "620bc030937c13ae027f5333",
+        label: "Water",
+        status: 1,
+        value: 3,
+        __v:0
+    },
+    
+    {
+        _id: "620bc030937c13ae027f5335",
+        label: "Other",
+        status: 1,
+        value: 5,
+        __v:0
+    },
+];
 
-export { images, profile, appConfig, 
+
+export { images, profile, appConfig, reportCat,
     address, provinces, Menu, Service_Categories, services, municipalities, providers };
   

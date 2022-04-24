@@ -2,9 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19000,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
-  "webpackServerPort": null
+  "expoServerNgrokUrl": "https://d6-gx3.guillain.micity-ios-react-native.exp.direct",
+  "packagerNgrokUrl": "https://packager.d6-gx3.guillain.micity-ios-react-native.exp.direct",
+  "ngrokPid": 12905,
+  "webpackServerPort": null,
+  "packagerPid": null
 }

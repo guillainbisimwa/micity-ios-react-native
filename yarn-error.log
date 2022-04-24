@@ -1,5 +1,5 @@
 Arguments: 
-  /home/guillain/.nvm/versions/node/v14.18.0/bin/node /usr/share/yarn/bin/yarn.js install
+  /home/guillain/.nvm/versions/node/v14.18.0/bin/node /usr/share/yarn/bin/yarn.js add expo-cli
 
 PATH: 
   /home/guillain/.nvm/versions/node/v14.18.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin:/home/guillain/.rvm/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: ENOSPC: no space left on device, copyfile '/home/guillain/.cache/yarn/v6/npm-react-native-web-0.17.1-90d473c89dd99b88bc9830b2a9fcdd2fc5f04902-integrity/node_modules/react-native-web/src/exports/StatusBar/index.js' -> '/home/guillain/Desktop/micity-ios-react-native/node_modules/react-native-web/src/exports/StatusBar/index.js'
+  Error: EACCES: permission denied, unlink '/home/guillain/Desktop/micity-ios-react-native/node_modules/.yarn-integrity'
 
 npm manifest: 
   {

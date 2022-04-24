@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Block, Button, Checkbox, Input, Select, Text } from "../components";
-import { Image, View, StyleSheet, Keyboard,Modal, ScrollView, ToastAndroid, ActivityIndicator } from "react-native";
+import { Image, StyleSheet, CheckBox, Keyboard,Modal, ScrollView, ToastAndroid, ActivityIndicator } from "react-native";
 import { Colors, Layout, mocks } from "../constants";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from "../api/api";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Signup = ({navigation}) => {
 
@@ -19,6 +18,8 @@ const Signup = ({navigation}) => {
     const [address, setAddress] = useState("");
     const [load, setLoad] = useState(false);
     const [showTerms, setShowTerms] = useState(false);
+    const [isSelected, setSelection] = useState(false);
+
 
     const [errors, setErrors] = useState({
         name :false,
@@ -295,7 +296,7 @@ const Signup = ({navigation}) => {
               <Block >
                 <Button onPress={() => setShowTerms(!showTerms)}>
                   <Text center caption white>
-                  I understand
+                  I agree
                   </Text>
                 </Button>
               </Block>
@@ -390,7 +391,7 @@ const Signup = ({navigation}) => {
                     }
              
                
-                <Checkbox
+                <CheckBox
                     checkboxStyle={{
                         borderWidth: 1,
                         borderRadius: 2,
@@ -401,6 +402,10 @@ const Signup = ({navigation}) => {
                         color: Colors.warning,
                         fontFamily: 'montserrat-regular'
                     }}
+                    value={isSelected}
+                    onValueChange={() => {
+                      setSelection(!isSelected)
+                      setShowTerms(!showTerms) }}
                     label="I accept the conditions of use."
                     />
                     <Button onPress={() => setShowTerms(!showTerms)}>

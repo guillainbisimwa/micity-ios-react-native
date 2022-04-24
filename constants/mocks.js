@@ -624,109 +624,166 @@ const municipalities = [
 
 const providers = [
     {
-        _id: "620bc030937c13ae027f5337",
-        label: "Adventure Tours",
-        status: 1,
-        value:2,
-        __v:0
+        "_id": "6237174bd3f931b463735bf8",
+        "label": "Arts & culture",
+        "status": 1,
+        "value": 1,
+        "created": "2022-03-20T12:00:11.082Z",
+        "__v": 0
     },
     {
-        _id: "620bc088937c13ae027f5339",
-        label: "Accommodation",
-        status: 1,
-        value:1,
-        __v:0
+        "_id": "62371784d3f931b463735bfa",
+        "label": "Entertainment",
+        "status": 1,
+        "value": 2,
+        "created": "2022-03-20T12:01:08.283Z",
+        "__v": 0
     },
     {
-        _id: "620bc09c937c13ae027f533b",
-        label: "Air Conditioning",
-        status: 1,
-        value:3,
-        __v:0
+        "_id": "6237178fd3f931b463735bfc",
+        "label": "usiness and financial",
+        "status": 1,
+        "value": 3,
+        "created": "2022-03-20T12:01:19.027Z",
+        "__v": 0
     },
     {
-        _id: "620bc0aa937c13ae027f533d",
-        label: "Airport Transfers",
-        status: 1,
-        value:4,
-        __v:0
+        "_id": "6237179bd3f931b463735bfe",
+        "label": "Medical",
+        "status": 1,
+        "value": 4,
+        "created": "2022-03-20T12:01:31.827Z",
+        "__v": 0
     },
     {
-        _id: "620bc0cb937c13ae027f533f",
-        label: "Plumbing",
-        status: 1,
-        value:5,
-        __v:0
+        "_id": "623717aad3f931b463735c00",
+        "label": "Professional services",
+        "status": 1,
+        "value": 5,
+        "created": "2022-03-20T12:01:46.064Z",
+        "__v": 0
     },
     {
-        _id: "620bc0d2937c13ae027f5341",
-        label: "Catering",
-        status: 1,
-        value:6,
-        __v:0
+        "_id": "623717b6d3f931b463735c02",
+        "label": "Construction and building",
+        "status": 1,
+        "value": 6,
+        "created": "2022-03-20T12:01:58.524Z",
+        "__v": 0
     },
     {
-        _id: "620bc0e7937c13ae027f5343",
-        label: "Cleaning Services",
-        status: 1,
-        value:7,
-        __v:0
+        "_id": "623717c1d3f931b463735c04",
+        "label": "Cleaning Services",
+        "status": 1,
+        "value": 7,
+        "created": "2022-03-20T12:02:09.629Z",
+        "__v": 0
     },
     {
-        _id: "620bc0f3937c13ae027f5345",
-        label: "Clothing",
-        status: 1,
-        value:8,
-        __v:0
+        "_id": "623717ccd3f931b463735c06",
+        "label": "Sports and recreation",
+        "status": 1,
+        "value": 8,
+        "created": "2022-03-20T12:02:20.636Z",
+        "__v": 0
     },
     {
-        _id: "620bc0ff937c13ae027f5347",
-        label: "Clothing Products",
-        status: 1,
-        value:9,
-        __v:0
+        "_id": "623717d8d3f931b463735c08",
+        "label": "Print, Media and communication",
+        "status": 1,
+        "value": 9,
+        "created": "2022-03-20T12:02:32.496Z",
+        "__v": 0
     },
     {
-        _id: "620bc10b937c13ae027f5349",
-        label: "Drain Cleaning",
-        status: 1,
-        value:10,
-        __v:0
+        "_id": "623717e4d3f931b463735c0a",
+        "label": "Home and Garden",
+        "status": 1,
+        "value": 10,
+        "created": "2022-03-20T12:02:44.274Z",
+        "__v": 0
     },
     {
-        _id: "620bc11f937c13ae027f534b",
-        label: "Electric Fence",
-        status: 1,
-        value:11,
-        __v:0
+        "_id": "623717f8d3f931b463735c0c",
+        "label": "Health and beauty",
+        "status": 1,
+        "value": 11,
+        "created": "2022-03-20T12:03:04.881Z",
+        "__v": 0
     },
     {
-        _id: "620bc130937c13ae027f534d",
-        label: "Electrical Installations",
-        status: 1,
-        value:12,
-        __v:0
+        "_id": "62371804d3f931b463735c0e",
+        "label": "Pets",
+        "status": 1,
+        "value": 12,
+        "created": "2022-03-20T12:03:16.267Z",
+        "__v": 0
     },
     {
-        _id: "620bc13c937c13ae027f534f",
-        label: "Financial Services",
-        status: 1,
-        value:13,
-        __v:0
+        "_id": "6237180fd3f931b463735c10",
+        "label": "Retailers",
+        "status": 1,
+        "value": 13,
+        "created": "2022-03-20T12:03:27.544Z",
+        "__v": 0
     },
     {
-        _id: "620bc147937c13ae027f5351",
-        label: "Furniture",
-        status: 1,
-        value:14,
-        __v:0
+        "_id": "62371819d3f931b463735c12",
+        "label": "Real estate",
+        "status": 1,
+        "value": 14,
+        "created": "2022-03-20T12:03:37.465Z",
+        "__v": 0
     },
     {
-        _id: "620bc151937c13ae027f5353",
-        label: "Graphic Design",
-        status: 1,
-        value:15,
-        __v:0
+        "_id": "62371822d3f931b463735c14",
+        "label": "Automobile",
+        "status": 1,
+        "value": 15,
+        "created": "2022-03-20T12:03:46.438Z",
+        "__v": 0
+    },
+    {
+        "_id": "6265c4813fdf5f054237b86b",
+        "label": "Manufacturing & industry",
+        "value": 16,
+        "created": "2022-04-24T21:43:29.588Z",
+        "__v": 0
+    },
+    {
+        "_id": "6265c4943fdf5f054237b86d",
+        "label": "Events & Conferences",
+        "value": 18,
+        "created": "2022-04-24T21:43:48.326Z",
+        "__v": 0
+    },
+    {
+        "_id": "6265c4a33fdf5f054237b86f",
+        "label": "Computers and Internet Services ",
+        "value": 17,
+        "created": "2022-04-24T21:44:03.616Z",
+        "__v": 0
+    },
+    {
+        "_id": "6265c4b13fdf5f054237b871",
+        "label": "Logistics",
+        "value": 18,
+        "created": "2022-04-24T21:44:17.650Z",
+        "__v": 0
+    },
+    {
+        "_id": "6265c4c13fdf5f054237b873",
+        "label": "Website & Software Development",
+        "value": 19,
+        "created": "2022-04-24T21:44:33.164Z",
+        "__v": 0
+    },
+    {
+        "_id": "6265c4cf3fdf5f054237b875",
+        "label": "Public and social services",
+        "value": 20,
+        "created": "2022-04-24T21:44:47.701Z",
+        "__v": 0
     }
 ];
 

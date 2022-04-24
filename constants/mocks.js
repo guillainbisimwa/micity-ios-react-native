@@ -99,15 +99,15 @@ const Menu = [
         status: true
     },
     {
-        id:2,
-        name: "Map",
-        image: require("../assets/icons/pin.png"),
-        status: false
-    },
-    {
         id:3,
         name: "Report a problem",
         image: require("../assets/icons/Vector.png"),
+        status: false
+    },
+    {
+        id:2,
+        name: "Map",
+        image: require("../assets/icons/pin.png"),
         status: false
     },
     {

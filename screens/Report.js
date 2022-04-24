@@ -58,8 +58,11 @@ const Report = ({route, navigation}) => {
 
     const pickImage = async () => {
         // No permissions request is necessary for launching the image library
+        //try{
         let result = await ImagePicker.launchImageLibraryAsync({
           mediaTypes: 'Images',
+          //mediaTypes: ImagePicker.MediaTypeOptions.All,
+
           allowsEditing: true,
           aspect: [4, 3],
           quality: 1,
@@ -91,6 +94,7 @@ const Report = ({route, navigation}) => {
             setImages([...imgCb2]);
             console.log(images);
         }
+   
       };
 
       const takePhoto = async () => {

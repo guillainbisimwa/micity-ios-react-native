@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Block, Button, Checkbox, Input, Select, Text } from "../components";
-import { Image, StyleSheet, CheckBox, Keyboard,Modal, ScrollView, ToastAndroid, ActivityIndicator } from "react-native";
+import { Block, Button, Input, Select, Text } from "../components";
+import Checkbox from 'expo-checkbox';
+import { Image, StyleSheet, Keyboard,Modal, ScrollView, ToastAndroid, ActivityIndicator } from "react-native";
 import { Colors, Layout, mocks } from "../constants";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from "../api/api";
@@ -389,31 +390,20 @@ const Signup = ({navigation}) => {
                         </Block>
                         </>
                     }
-             
-               
-                <CheckBox
-                    checkboxStyle={{
-                        borderWidth: 1,
-                        borderRadius: 2,
-                        borderColor: '#E3E3E3'
-                    }}
-                    color={Colors.primary}
-                    labelStyle={{
-                        color: Colors.warning,
-                        fontFamily: 'montserrat-regular'
-                    }}
-                    value={isSelected}
-                    onValueChange={() => {
-                      setSelection(!isSelected)
-                      setShowTerms(!showTerms) }}
-                    label="I accept the conditions of use."
-                    />
-                    <Button onPress={() => setShowTerms(!showTerms)}>
-            <Text center caption white>
-              Conditions d'utilisations
-            </Text>
-          </Button>
-                      
+                    <Block row>
+                    <Checkbox
+                        value={isSelected}
+                        onValueChange={() => {
+                          setSelection(!isSelected)
+                         
+                          if(!isSelected){
+                            setShowTerms(!showTerms)
+                          }
+                          }}
+                        />
+                      <Text> I accept the conditions of use.</Text>
+                    </Block>
+                    
                 <Block flex={1} center>
                
                     <Button color="white" onPress={() => navigation.navigate("Login")} >

@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getMunicipalities } from "../redux/municipalitiesSlice";
 import * as ImagePicker from 'expo-image-picker';
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { reportCat } from "../constants/mocks";
 
 const Report = ({route, navigation}) => {
     const { min } = route.params;
@@ -18,6 +19,7 @@ const Report = ({route, navigation}) => {
     const [location, setLocation] = useState("");
     const [desc, setDesc] = useState("");
     const [municipality, setMunicipality] = useState("");
+    const [reportCatList, setReportCatList] = useState("");
     const [load, setLoad] = useState(false);
     const [loadPic, setLoadPic] = useState(false);
     const [imgUrl, setImgUrl] = useState([]);
@@ -26,6 +28,7 @@ const Report = ({route, navigation}) => {
         location :false,
         desc :false,
         municipality: false,
+        reportCat: false,
         images: []
     });
 
@@ -228,6 +231,11 @@ const Report = ({route, navigation}) => {
             setErrors({...errors})
         }
 
+        if(reportCatList === ""){
+            errors.reportCat = true;
+            setErrors({...errors})
+        }
+
         try{
             const value = await AsyncStorage.getItem('@user');
             if( !errors.location &&
@@ -247,6 +255,7 @@ const Report = ({route, navigation}) => {
                 setErrors({
                     location :false,
                     desc :false,
+                    reportCat: false,
                     municipality: false,
                     images: []
                 });
@@ -394,6 +403,28 @@ const Report = ({route, navigation}) => {
                                 )
                             }
                         </Block>
+                        <Block style={{
+                            //  ...Platform.select({
+                            //     ios: {
+                            //         zIndex: 2,
+                            //         elevation: 2
+                            //     },
+                            //     android: {
+                            //         zIndex: 2,
+                            //         elevation: 2
+                            //     },
+                            // })
+                        }}>
+                            <Select
+                                placeholder="Select a Category"
+                                items={reportCat}
+                                value={reportCatList}
+                                error={errors.reportCat}
+                                setValue={setReportCatList}
+                                listMode="SCROLLVIEW"
+                            />
+                        </Block>
+                        
                       
                         <Input
                             icon="location-outline"
@@ -404,18 +435,20 @@ const Report = ({route, navigation}) => {
                             onChangeText={text => setLocation(text)}
                         />
 
-                        <Select
-                            placeholder="Select a Municipality"
-                            items={min}
-                            value={municipality}
-                            categorySelectable={false}
-                            error={errors.municipality}
-                            setValue={setMunicipality}
-                            listParentLabelStyle={{
-                                fontWeight: "bold"
-                            }}
-                            listMode="SCROLLVIEW"
-                        />
+                      
+
+                            <Select
+                                placeholder="Select a Municipality"
+                                items={min}
+                                value={municipality}
+                                categorySelectable={false}
+                                error={errors.municipality}
+                                setValue={setMunicipality}
+                                listParentLabelStyle={{
+                                    fontWeight: "bold"
+                                }}
+                                listMode="SCROLLVIEW"
+                            />
 
                         <Input
                             multiline={true}
@@ -492,7 +525,18 @@ const styles = StyleSheet.create({
         height: 100,
         paddingTop:15,
         justifyContent: "flex-start",
-        textAlignVertical: 'top'
+        textAlignVertical: 'top',
+        // ...Platform.select({
+        //     ios: {
+        //         zIndex: 0,
+        //         elevation: 0
+        //     },
+        //     android: {
+        //         zIndex: 0,
+        //         elevation: 0
+        //     },
+        //})
+        
     },
     cancel: {
         position: "absolute",

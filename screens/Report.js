@@ -414,6 +414,7 @@ const Report = ({route, navigation}) => {
                             listParentLabelStyle={{
                                 fontWeight: "bold"
                             }}
+                            listMode="SCROLLVIEW"
                         />
 
                         <Input

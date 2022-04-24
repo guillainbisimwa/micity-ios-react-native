@@ -7,7 +7,7 @@ import Text from "./Text";
 const info = (name) => (
     Alert.alert(
       `${name}`,
-      `Not Implemented yet!`,
+      `Coming soon`,
       [
         {
           text: "Okay",

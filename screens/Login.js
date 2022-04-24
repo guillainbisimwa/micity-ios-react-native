@@ -124,7 +124,10 @@ const Login = ({navigation}) => {
                         storeData(rep.data.token, rep.data.user);
                         getData();
                     }
+                }else {
+                    ToastAndroid.show(`Error occured, please retry`, ToastAndroid.LONG);
                 }
+                
         
                 setLoad(false)
             }else {
@@ -132,7 +135,10 @@ const Login = ({navigation}) => {
                 setLoad(false)
             }
         } catch(e){
-            ToastAndroid.show(e.response.data.error_message, ToastAndroid.LONG);
+            console.log("bree");
+            console.log(e);
+            //ToastAndroid.show(e.response.data.error_message, ToastAndroid.LONG);
+            ToastAndroid.show("Network Error, please retry", ToastAndroid.LONG);
             setPassword("");
             setLoad(false)
         }

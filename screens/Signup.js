@@ -468,6 +468,168 @@ const Signup = ({navigation}) => {
                 </Text>
 
                 <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                3. Use of Your Personal Data
+                </Text>
+
+              
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2  }}
+                >
+                The Company may use Personal Data for the following purposes:
+                </Text>
+                
+               
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* To provide and maintain our Service</Text> ,including to monitor the usage of our Service.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* To manage Your Account:</Text> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* For the performance of a contract:</Text> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service. </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* To contact You:</Text>  To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* To provide You</Text> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.
+              </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* To manage Your requests:</Text>  To attend and manage Your requests to Us.
+            </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* For business transfers:</Text>  We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* For other purposes:</Text>  We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.
+                  </Text>
+                </Block>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base  }}
+                >
+                We may share Your personal information in the following situations:
+                </Text>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* With Service Providers: :</Text>  We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.
+</Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* For business transfers:</Text>  We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
+ </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* With Affiliates:</Text>  We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
+ </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* With business partners:</Text>  We may share Your information with Our business partners to offer You certain products, services or promotions.
+ </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* With other users:</Text> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.
+ </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* With Your consent:</Text> We may disclose Your personal information for any other purpose with Your consent.
+  </Text>
+                </Block>
+              
+
+
+                <Text
                   caption
                   gray
                   style={{ marginBottom:  Layout.base }}

@@ -187,47 +187,149 @@ const Signup = ({navigation}) => {
     
               <ScrollView style={{ marginVertical: Layout.padding }}>
                 <Text
-                  caption
-                  gray
-                 // height={24}
-                  style={{ marginBottom: Layout.base }}
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
                 >
-                  1. Your use of the Service is at your sole risk. The service is
-                  provided on an "as is" and "as available" basis.
+                1. Interpretation and Definitions.
+                </Text>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                1.1. Interpretation
                 </Text>
                 <Text
                   caption
                   gray
-                 // height={24}
                   style={{ marginBottom:  Layout.base  }}
                 >
-                  2. Support for Expo services is only available in English, via
-                  e-mail.
+                The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
                 </Text>
                 <Text
-                  caption
-                  gray
-                 // height={24}
-                  style={{ marginBottom:  Layout.base  }}
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
                 >
-                  3. You understand that Expo uses third-party vendors and hosting
-                  partners to provide the necessary hardware, software, networking,
-                  storage, and related technology required to run the Service.
+                1.2. Definitions
                 </Text>
                 <Text
                   caption
                   gray
-                 // height={24}
-                  style={{ marginBottom:  Layout.base  }}
+                  style={{ marginBottom:  Layout.base/2  }}
                 >
-                  4. You must not modify, adapt or hack the Service or modify
-                  another website so as to falsely imply that it is associated with
-                  the Service, Expo, or any other Expo service.
+                  For the purposes of this Privacy Policy:
                 </Text>
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Account</Text> means a unique account created for You to access our Service or parts of our Service.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Affiliate</Text> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Application</Text> means the software program provided by the Company downloaded by You on any electronic device, named MiCity
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Company</Text> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to MiCity.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Country</Text> refers to: South Africa
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Device</Text>   means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Personal</Text> Data is any information that relates to an identified or identifiable individual.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Service</Text>  refers to the Application.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Service Provider</Text>  means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Usage Data</Text>  refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* You</Text>  means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
+                  </Text>
+                </Block>
+
+
                 <Text
                   caption
                   gray
-                 // height={24}
                   style={{ marginBottom:  Layout.base  }}
                 >
                   5. You may use the Expo Pages static hosting service solely as
@@ -240,7 +342,6 @@ const Signup = ({navigation}) => {
                 <Text
                   caption
                   gray
-                 // height={24}
                   style={{ marginBottom:  Layout.base  }}
                 >
                   6. You agree not to reproduce, duplicate, copy, sell, resell or
@@ -250,7 +351,6 @@ const Signup = ({navigation}) => {
                 <Text
                   caption
                   gray
-                 // height={24}
                   style={{ marginBottom:  Layout.base  }}
                 >
                   7. We may, but have no obligation to, remove Content and Accounts
@@ -262,7 +362,6 @@ const Signup = ({navigation}) => {
                 <Text
                   caption
                   gray
-                 // height={24}
                   style={{ marginBottom:  Layout.base  }}
                 >
                   8. Verbal, physical, written or other abuse (including threats of
@@ -272,7 +371,6 @@ const Signup = ({navigation}) => {
                 <Text
                   caption
                   gray
-                 // height={24}
                   style={{ marginBottom:  Layout.base  }}
                 >
                   9. You understand that the technical processing and transmission
@@ -284,7 +382,6 @@ const Signup = ({navigation}) => {
                 <Text
                   caption
                   gray
-                 // height={24}
                   style={{ marginBottom:  Layout.base  }}
                 >
                   10. You must not upload, post, host, or transmit unsolicited

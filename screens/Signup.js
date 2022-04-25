@@ -574,7 +574,7 @@ const Signup = ({navigation}) => {
                     style={{  }}
                   >
                     <Text bold>* With Service Providers: :</Text>  We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.
-</Text>
+            </Text>
                 </Block>
 
                 <Block paddingLeft={10} marginTop={5}>
@@ -584,7 +584,7 @@ const Signup = ({navigation}) => {
                     style={{  }}
                   >
                     <Text bold>* For business transfers:</Text>  We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
- </Text>
+            </Text>
                 </Block>
 
                 <Block paddingLeft={10} marginTop={5}>
@@ -594,7 +594,7 @@ const Signup = ({navigation}) => {
                     style={{  }}
                   >
                     <Text bold>* With Affiliates:</Text>  We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
- </Text>
+              </Text>
                 </Block>
 
                 <Block paddingLeft={10} marginTop={5}>
@@ -604,7 +604,7 @@ const Signup = ({navigation}) => {
                     style={{  }}
                   >
                     <Text bold>* With business partners:</Text>  We may share Your information with Our business partners to offer You certain products, services or promotions.
- </Text>
+              </Text>
                 </Block>
 
                 <Block paddingLeft={10} marginTop={5}>
@@ -614,7 +614,7 @@ const Signup = ({navigation}) => {
                     style={{  }}
                   >
                     <Text bold>* With other users:</Text> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.
- </Text>
+            </Text>
                 </Block>
 
                 <Block paddingLeft={10} marginTop={5}>
@@ -624,20 +624,32 @@ const Signup = ({navigation}) => {
                     style={{  }}
                   >
                     <Text bold>* With Your consent:</Text> We may disclose Your personal information for any other purpose with Your consent.
-  </Text>
+            </Text>
                 </Block>
-              
 
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                4. Retention of Your Personal Data
+                </Text>
 
                 <Text
                   caption
                   gray
-                  style={{ marginBottom:  Layout.base }}
+                  style={{ marginBottom:  Layout.base/2 }}
                 >
-                  6. You agree not to reproduce, duplicate, copy, sell, resell or
-                  exploit any portion of the Service, use of the Service, or access
-                  to the Service without the express written permission by Expo.
+                 The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
                 </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2 }}
+                >
+                The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
+                </Text>
+
+
                 <Text
                   caption
                   gray

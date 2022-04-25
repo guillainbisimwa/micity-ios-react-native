@@ -775,34 +775,98 @@ const Signup = ({navigation}) => {
                   </Text>
                 </Block>
 
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                3. Children's Privacy
+                </Text>
 
                 <Text
                   caption
                   gray
                   style={{ marginBottom:  Layout.base  }}
                 >
-                  8. Verbal, physical, written or other abuse (including threats of
-                  abuse or retribution) of any Expo customer, employee, member, or
-                  officer will result in immediate account termination.
+                  Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base  }}
+                >
+                If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
+                </Text>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                4. Links to Other Websites
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base  }}
+                >
+                  Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base  }}
+                >
+                  We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+                </Text>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                5. Changes to this Privacy Policy
                 </Text>
                 <Text
                   caption
                   gray
                   style={{ marginBottom:  Layout.base  }}
                 >
-                  9. You understand that the technical processing and transmission
-                  of the Service, including your Content, may be transferred
-                  unencrypted and involve (a) transmissions over various networks;
-                  and (b) changes to conform and adapt to technical requirements of
-                  connecting networks or devices.
+                We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base  }}
+                >
+                We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base  }}
+                >
+                You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+                </Text>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                6. Contact Us
                 </Text>
                 <Text
                   caption
                   gray
                   style={{ marginBottom:  Layout.base  }}
                 >
-                  10. You must not upload, post, host, or transmit unsolicited
-                  e-mail, SMSs, or "spam" messages.
+                If you have any questions about this Privacy Policy, You can contact us: 
+                </Text>
+
+                <Text
+                  caption
+                  
+                  style={{ marginBottom:  Layout.base, fontWeight: "bold" }}
+                >
+                By email:[email protected]
                 </Text>
                 
               </ScrollView>

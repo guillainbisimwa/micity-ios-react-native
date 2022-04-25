@@ -888,7 +888,7 @@ const Signup = ({navigation}) => {
       }
 
 
-    return <KeyboardAwareScrollView>
+    return <KeyboardAwareScrollView style={{backgroundColor: "#fff"}} >
             <Block padding={50} color="white" animated>
             <Block flex={1} >
                 <Block flex={1} center  middle >

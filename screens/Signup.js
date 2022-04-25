@@ -649,6 +649,13 @@ const Signup = ({navigation}) => {
                 The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.
                 </Text>
 
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                5. Transfer of Your Personal Data
+
+                </Text>
+
 
                 <Text
                   caption

@@ -272,7 +272,7 @@ const Signup = ({navigation}) => {
                     gray
                     style={{  }}
                   >
-                    <Text bold>* Device</Text>   means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+                    <Text bold>* Device</Text> means any device that can access the Service such as a computer, a cellphone or a digital tablet.
                   </Text>
                 </Block>
 
@@ -470,7 +470,7 @@ const Signup = ({navigation}) => {
                 <Text
                   style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
                 >
-                3. Use of Your Personal Data
+                2.2. Use of Your Personal Data
                 </Text>
 
               
@@ -630,7 +630,7 @@ const Signup = ({navigation}) => {
                 <Text
                   style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
                 >
-                4. Retention of Your Personal Data
+                2.3. Retention of Your Personal Data
                 </Text>
 
                 <Text
@@ -652,7 +652,7 @@ const Signup = ({navigation}) => {
                 <Text
                   style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
                 >
-                5. Transfer of Your Personal Data
+                2.4. Transfer of Your Personal Data
                 </Text>
 
                 <Text
@@ -680,16 +680,102 @@ const Signup = ({navigation}) => {
                 </Text>
 
                 <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                2.5. Disclosure of Your Personal Data
+                </Text>
+
+               
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                Business Transactions
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2  }}
+                >
+                If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.
+                </Text>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                Law enforcement
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2  }}
+                >
+                Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+                </Text>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                Other legal requirements
+                </Text>
+
+                <Text
                   caption
                   gray
                   style={{ marginBottom:  Layout.base  }}
                 >
-                  7. We may, but have no obligation to, remove Content and Accounts
-                  containing Content that we determine in our sole discretion are
-                  unlawful, offensive, threatening, libelous, defamatory,
-                  pornographic, obscene or otherwise objectionable or violates any
-                  party's intellectual property or these Terms of Service.
+                  The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
                 </Text>
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    * Comply with a legal obligation
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    * Protect and defend the rights or property of the Company
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    * Prevent or investigate possible wrongdoing in connection with the Service
+                  </Text>
+                </Block>
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    * Protect the personal safety of Users of the Service or the public
+                  </Text>
+                </Block>
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    * Protect against legal liability
+                  </Text>
+                </Block>
+
+
                 <Text
                   caption
                   gray

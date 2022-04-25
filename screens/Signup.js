@@ -282,7 +282,7 @@ const Signup = ({navigation}) => {
                     gray
                     style={{  }}
                   >
-                    <Text bold>* Personal</Text> Data is any information that relates to an identified or identifiable individual.
+                    <Text bold>* Personal Data</Text> is any information that relates to an identified or identifiable individual.
                   </Text>
                 </Block>
 
@@ -320,29 +320,157 @@ const Signup = ({navigation}) => {
                   <Text
                     caption
                     gray
-                    style={{  }}
+                    style={{ marginBottom: Layout.base  }}
                   >
                     <Text bold>* You</Text>  means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
                   </Text>
                 </Block>
 
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                2. Collecting and Using Your Personal Data.
+                </Text>
 
                 <Text
-                  caption
-                  gray
-                  style={{ marginBottom:  Layout.base  }}
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
                 >
-                  5. You may use the Expo Pages static hosting service solely as
-                  permitted and intended to host your organization pages, personal
-                  pages, or project pages, and for no other purpose. You may not use
-                  Expo Pages in violation of Expo's trademark or other rights or in
-                  violation of applicable law. Expo reserves the right at all times
-                  to reclaim any Expo subdomain without liability to you.
+                2.1. Types of Data Collected
+                </Text>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                  Personal Data
                 </Text>
                 <Text
                   caption
                   gray
                   style={{ marginBottom:  Layout.base  }}
+                >
+                While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
+                </Text>
+                
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Email address</Text>
+                  </Text>
+                </Block>
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* First name and last name</Text>
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Phone number</Text>
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Address, State, Province, ZIP/Postal code, City</Text>
+                  </Text>
+                </Block>
+
+                <Block paddingLeft={10} marginTop={5} marginBottom={5}>
+                  <Text
+                    caption
+                    gray
+                    style={{  }}
+                  >
+                    <Text bold>* Usage Data</Text>
+                  </Text>
+                </Block>
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                 Usage Data
+                </Text>
+
+                 <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2 }}
+                >
+                  Usage Data is collected automatically when using the Service.</Text>
+                  <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2 }}
+                >
+                  Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+                </Text> 
+                
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2 }}
+                >
+                  When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
+                </Text> 
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base }}
+                >
+                  We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
+
+                </Text> 
+
+                <Text
+                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
+                >
+                 Information Collected while Using the Application
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2 }}
+                >While using Our Application, in order to provide features of Our Application, We may collect, with Your prior permission:
+                </Text>
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2, fontWeight: "bold" }}
+                > Pictures and other information from your Device's camera and photo library
+                </Text>
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2 }}
+                >We use this information to provide features of Our Service, to improve and customize Our Service. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be simply stored on Your device.
+                </Text>
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base/2 }}
+                >You can enable or disable access to this information at any time, through Your Device settings.
+                </Text>
+
+                <Text
+                  caption
+                  gray
+                  style={{ marginBottom:  Layout.base }}
                 >
                   6. You agree not to reproduce, duplicate, copy, sell, resell or
                   exploit any portion of the Service, use of the Service, or access

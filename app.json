@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "MiCiti",
-    "slug": "MiCiti",
-    "version": "2.5.0",
+    "name": "MyCiti",
+    "slug": "MyCiti",
+    "version": "2.6.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {

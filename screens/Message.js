@@ -36,7 +36,7 @@ const Message = ({route, navigation}) =>{
             <Block flex={1}>
                 <View style={styles.container}>
                     <Image style={styles.icon} source={{uri: "https://img.icons8.com/color/70/000000/facebook-like.png"}} />
-                    <Text style={styles.title}>Congratulation</Text>
+                    <Text style={styles.title}>Congratulations</Text>
                     <Text style={styles.description}>{message}</Text>
                 </View>
                 <Block style={{padding: 50}} >

@@ -847,30 +847,7 @@ const Signup = ({navigation}) => {
                 >
                 You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
                 </Text>
-
-                <Text
-                  style={{ marginBottom: Layout.base/2, fontWeight: "bold" }}
-                >
-                6. Contact Us
-                </Text>
-                <Text
-                  caption
-                  gray
-                  style={{ marginBottom:  Layout.base  }}
-                >
-                If you have any questions about this Privacy Policy, You can contact us: 
-                </Text>
-
-                <Text
-                  caption
-                  
-                  style={{ marginBottom:  Layout.base, fontWeight: "bold" }}
-                >
-                By email:[email protected]
-                </Text>
-                
               </ScrollView>
-             
              
               <Block >
                 <Button onPress={() => setShowTerms(!showTerms)}>

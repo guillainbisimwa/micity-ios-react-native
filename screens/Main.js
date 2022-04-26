@@ -53,7 +53,7 @@ const Main = ({navigation}) => {
                 </TouchableOpacity>
               
                 <Block padding={1}>
-                    <Text numberOfLines={1} bold h1 primary>MiCity</Text>
+                    <Text numberOfLines={1} bold h1 primary>MyCiti</Text>
                 </Block>
                 <Block>
                 </Block>

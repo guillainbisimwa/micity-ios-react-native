@@ -333,6 +333,7 @@ const Report = ({route, navigation}) => {
     }
 
     return <KeyboardAwareScrollView style={styles.scroll}>
+     <ScrollView showsVerticalScrollIndicator={false}>
             <Block color="white" animated>
                 <Block flex={1} >
                     <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
@@ -472,6 +473,7 @@ const Report = ({route, navigation}) => {
                     </Block>
                 </Block>
             </Block>
+            </ScrollView>
         </KeyboardAwareScrollView>
 };
 

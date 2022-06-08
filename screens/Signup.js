@@ -919,6 +919,7 @@ const Signup = ({navigation}) => {
                     value={province}
                     error={errors.province}
                     setValue={setProvince}
+                    listMode="SCROLLVIEW"
                 />
 
                 <Input

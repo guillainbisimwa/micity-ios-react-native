@@ -641,7 +641,7 @@ const providers = [
     },
     {
         "_id": "6237178fd3f931b463735bfc",
-        "label": "usiness and financial",
+        "label": "Business and financial",
         "status": 1,
         "value": 3,
         "created": "2022-03-20T12:01:19.027Z",

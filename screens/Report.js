@@ -435,9 +435,17 @@ const Report = ({route, navigation}) => {
                             onChangeText={text => setLocation(text)}
                         />
 
-                      
+                        <Input
+                            multiline={true}
+                            numberOfLines={10}
+                            placeholder="Add a description"
+                            style={styles.textArea}
+                            error={errors.desc}
+                            defaultValue={desc}
+                            onChangeText={text => setDesc(text)}
+                        />
 
-                            <Select
+                        <Select
                                 placeholder="Select a Municipality"
                                 items={min}
                                 value={municipality}
@@ -449,16 +457,6 @@ const Report = ({route, navigation}) => {
                                 }}
                                 listMode="SCROLLVIEW"
                             />
-
-                        <Input
-                            multiline={true}
-                            numberOfLines={10}
-                            placeholder="Add a description"
-                            style={styles.textArea}
-                            error={errors.desc}
-                            defaultValue={desc}
-                            onChangeText={text => setDesc(text)}
-                        />
 
                         <Block style={styles.mt} >
                             <Button  onPress={() => onSave()}>

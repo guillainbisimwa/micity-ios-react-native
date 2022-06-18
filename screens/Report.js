@@ -404,18 +404,7 @@ const Report = ({route, navigation}) => {
                                 )
                             }
                         </Block>
-                        <Block style={{
-                            //  ...Platform.select({
-                            //     ios: {
-                            //         zIndex: 2,
-                            //         elevation: 2
-                            //     },
-                            //     android: {
-                            //         zIndex: 2,
-                            //         elevation: 2
-                            //     },
-                            // })
-                        }}>
+                         <Block style={styles.select}>
                             <Select
                                 placeholder="Select a Category"
                                 items={reportCat}
@@ -426,7 +415,6 @@ const Report = ({route, navigation}) => {
                             />
                         </Block>
                         
-                      
                         <Input
                             icon="location-outline"
                             search
@@ -445,8 +433,8 @@ const Report = ({route, navigation}) => {
                             defaultValue={desc}
                             onChangeText={text => setDesc(text)}
                         />
-
-                        <Select
+                        <Block style={styles.select}>
+                            <Select
                                 placeholder="Select a Municipality"
                                 items={min}
                                 value={municipality}
@@ -458,6 +446,7 @@ const Report = ({route, navigation}) => {
                                 }}
                                 listMode="SCROLLVIEW"
                             />
+                        </Block>
 
                         <Block style={styles.mt} >
                             <Button  onPress={() => onSave()}>
@@ -480,7 +469,7 @@ const Report = ({route, navigation}) => {
 
 const styles = StyleSheet.create({
     scroll:{
-        backgroundColor: Colors.dark.text
+        backgroundColor: Colors.danger,
     },
 
     report: {
@@ -560,6 +549,14 @@ const styles = StyleSheet.create({
         backgroundColor: "#000",
         borderRadius: Layout.radius,
         marginRight: Layout.base*1.7
+    },
+    select: {
+        ...Platform.select({
+            ios: {
+               zIndex: 1,
+                elevation: 1
+            },
+          })
     }
 });
 

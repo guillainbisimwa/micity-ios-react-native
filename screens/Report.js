@@ -572,7 +572,7 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.danger,
     },
     scrollContent:{
-        paddingBottom: 200,
+        paddingBottom: 120,
         backgroundColor: "white"
     },
     report: {

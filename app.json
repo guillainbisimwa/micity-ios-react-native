@@ -30,7 +30,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#12316A"
       },
-      "versionCode": 7,
+      "versionCode": 8,
       "package": "com.zaio.micity",
       "permissions": [
         "android.permission.CAMERA",

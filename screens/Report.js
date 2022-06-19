@@ -432,7 +432,7 @@ const Report = ({route, navigation}) => {
     }
 
     return <KeyboardAwareScrollView style={styles.scroll}>
-            <Block color="white" animated>
+            <Block color="white" style={styles.scrollContent}  animated>
                 <Block flex={1} >
                     <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
                         <TouchableOpacity
@@ -570,9 +570,11 @@ const Report = ({route, navigation}) => {
 const styles = StyleSheet.create({
     scroll:{
         backgroundColor: Colors.danger,
-        paddingBottom: 200
     },
-
+    scrollContent:{
+        paddingBottom: 200,
+        backgroundColor: "white"
+    },
     report: {
         flex: 1,
         backgroundColor: Colors.danger,

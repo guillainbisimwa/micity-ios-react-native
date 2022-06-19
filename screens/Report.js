@@ -89,13 +89,13 @@ const Report = ({route, navigation}) => {
             setImagesV2([...imgCb2V2]);
          
             //await onCloudinarySaveCb(source);
-            console.log("------------");
+            console.log("------------>>>>>>");
             let imgCb = await onCloudinarySaveCb(source);
             let imgCb2 = [...images];
 
             imgCb2.push(imgCb);
             setImages([...imgCb2]);
-            console.log(images);
+            console.log(imgCb2);
         }
    
       };
@@ -288,6 +288,105 @@ const Report = ({route, navigation}) => {
         }
     }
 
+    const report_and_send_mail = async () =>{
+        //console.log(images);
+        setLoad(true);
+        errors.location = false;
+        errors.desc = false;
+        errors.municipality = false;
+        setErrors({...errors})
+
+        if(location.trim().length <= 3){
+            errors.location = true;
+            setErrors({...errors})
+        }
+
+        if(desc.trim().length <= 3){
+            errors.desc = true;
+            setErrors({...errors})
+        }
+
+        if(municipality === ""){
+            errors.municipality = true;
+            setErrors({...errors})
+        }
+
+        if(reportCatList === ""){
+            errors.reportCat = true;
+            setErrors({...errors})
+        }
+
+        try{
+            const value = await AsyncStorage.getItem('@user');
+            if( !errors.location &&
+                !errors.desc &&
+                !errors.municipality){
+
+                const rep = await api.post('/report_and_send_mail', {
+                    location: location,
+                    desc: desc,
+                    owner: JSON.parse(value)._id,
+                    municipality: municipality,
+                    type: "0",
+                    status: "0",
+                    images: images,
+                    // Data mail
+                    email: "micityoffice@gmail.com",
+                    subject: "Micity - Problem reported",
+                    date: new Date(Date.now()).toISOString().split('T')[0],
+                    //municipality: municipality,
+                    name: JSON.parse(value).name,
+                    mail: JSON.parse(value).email,
+                    Location: location,
+                    details: desc,
+                    source1: images[0] === undefined? "" : images[0],
+                    source2: images[1] === undefined? "" : images[1],
+                    source3: images[2] === undefined? "" : images[2],
+
+                });
+               
+                setErrors({
+                    location :false,
+                    desc :false,
+                    reportCat: false,
+                    municipality: false,
+                    images: []
+                });
+            
+                setImages([]);
+                setImagesV2([]);
+                setLocation("");
+                setDesc("");
+                setMunicipality("");
+                setImgUrl([]);
+                setLoad(false);
+
+                // console.log(rep.data);
+                // if(rep.data.hasOwnProperty('owner')){
+                //     await onSendMail1(value);
+                //     //await onSendMail2(value);
+                //     setLocation("");
+                //     setDesc("");
+                //     setMunicipality("");
+                //     setImgUrl([]);
+                navigation.navigate("Message", {
+                    message: "You have successfully reported a problem!"
+                });
+                // }
+            }else {
+                ToastAndroid.show(`One or more fields is not invalid, please retry`, ToastAndroid.LONG);
+                setLoad(false)
+            }
+        } catch(e){
+            console.log(e);
+            ToastAndroid.show(e.response.data.error_message, ToastAndroid.LONG);
+            setLoad(false)
+            navigation.navigate("ErrorMessage", {
+                message: "Error occurred while reporting a problem!"
+            });
+        }
+    }
+
     const onSendMail1 = async (value) => {
         ToastAndroid.show(`Mail sent`, ToastAndroid.LONG);
         // Send Mail
@@ -333,7 +432,6 @@ const Report = ({route, navigation}) => {
     }
 
     return <KeyboardAwareScrollView style={styles.scroll}>
-     <ScrollView showsVerticalScrollIndicator={false}>
             <Block color="white" animated>
                 <Block flex={1} >
                     <Block style={{ paddingTop: Layout.base*1.9, paddingRight: Layout.base*1.5, paddingLeft: Layout.base*1.5, flexDirection: 'row', justifyContent: 'space-between'  }}>
@@ -354,7 +452,7 @@ const Report = ({route, navigation}) => {
                         </Block>
                     </Block>
                 </Block>
-                <Block  flex={2} animated style={{paddingBottom:1, paddingLeft:Layout.base*2, paddingRight:Layout.base*2, flex: 1}}>
+                <Block  flex={2} animated style={{paddingBottom: 1, paddingLeft:Layout.base*2, paddingRight:Layout.base*2, flex: 1}}>
                     <Text h2 style={styles.header} >Report an issue in your area by uploading a photo.</Text>
                     
                     <Block  flex={1}>
@@ -445,11 +543,14 @@ const Report = ({route, navigation}) => {
                                     fontWeight: "bold"
                                 }}
                                 listMode="SCROLLVIEW"
+                                maxHeight={200}
+                                autoScroll={true}
+
                             />
                         </Block>
 
                         <Block style={styles.mt} >
-                            <Button  onPress={() => onSave()}>
+                            <Button  onPress={() => report_and_send_mail()}>
                                 <Text white bold h2 center>Report</Text>
                             </Button>
                         </Block>
@@ -462,7 +563,6 @@ const Report = ({route, navigation}) => {
                     </Block>
                 </Block>
             </Block>
-            </ScrollView>
         </KeyboardAwareScrollView>
 };
 
@@ -470,6 +570,7 @@ const Report = ({route, navigation}) => {
 const styles = StyleSheet.create({
     scroll:{
         backgroundColor: Colors.danger,
+        paddingBottom: 200
     },
 
     report: {

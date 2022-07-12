@@ -2,7 +2,7 @@
   "expo": {
     "name": "MyCiti",
     "slug": "MiCiti",
-    "version": "2.9.0",
+    "version": "2.10.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -30,7 +30,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#12316A"
       },
-      "versionCode": 9,
+      "versionCode": 10,
       "package": "com.zaio.micity",
       "permissions": [
         "android.permission.CAMERA",
